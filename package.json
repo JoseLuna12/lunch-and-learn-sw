@@ -1,0 +1,14 @@
+{
+  "name": "vanillall",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server -c-1",
+    "tailwind": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/style.css",
+    "tailwind:watch": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/style.css --watch"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="w-full flex justify-center py-10">
+        <div class="w-auto text-3xl">
+          <span class="italic">The Jobsity</span>
+          <span class="font-bold">Post</span>
+        </div>
+      </div>
+    </div>
+    <div id="newsPageContent" class="px-14 w-full"></div>
+    <footer>
+      <script src="../components/components.js"></script>
+      <script src="../scripts/utils.js"></script>
+      <script src="../app.js"></script>
+      <script>
+        function load() {
+          newsPage();
+        }
+        load();
+      </script>
+    </footer>
+  </body>
+</html>

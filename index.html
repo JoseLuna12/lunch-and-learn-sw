@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="w-full flex justify-center py-10">
+        <div class="w-auto text-3xl">
+          <span class="italic">The Jobsity</span>
+          <span class="font-bold">Post</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex" style="height: 500px">
+      <div id="bigNew" class="flex-grow h-auto bg-green-300">
+        <!-- big news container -->
+      </div>
+      <div class="w-5/12 bg-yellow-300 overflow-y-auto">
+        <div id="allNews" class="py-4">
+          <!-- latest news container -->
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex justify-center mt-10 mb-7">
+      <div class="flex w-auto space-x-10">
+        <div
+          id="newsType"
+          data-type="programming"
+          class="px-3 py-2 bg-green-300 text-white cursor-pointer"
+        >
+          Programming
+        </div>
+        <div
+          id="newsType"
+          data-type="ds"
+          class="px-3 py-2 bg-green-300 text-white cursor-pointer"
+        >
+          Data Science
+        </div>
+        <div
+          id="newsType"
+          data-type="sw"
+          class="px-3 py-2 bg-yellow-200 text-black cursor-pointer"
+        >
+          Service Workers
+        </div>
+      </div>
+    </div>
+
+    <div id="testContent">
+      <!-- content by type container -->
+    </div>
+
+    <div>
+      <div class="w-full flex justify-center">
+        <div class="flex flex-col">
+          <input
+            placeholder="Email"
+            class="border py-2 px-3 text-grey-darkest"
+            type="text"
+            id="email"
+            name="email"
+          />
+          <div
+            id="submitEmail"
+            class="
+              w-64
+              text-center
+              px-3
+              py-2
+              bg-yellow-200
+              text-black
+              cursor-pointer
+            "
+          >
+            Submit email
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <script src="./components/components.js"></script>
+      <script src="./scripts/utils.js"></script>
+      <script src="./app.js"></script>
+      <script>
+        function load() {
+          homePage();
+        }
+        load();
+      </script>
+    </footer>
+  </body>
+</html>
